@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="30.132" tests="12" skipped="0" failures="0" errors="0">
+<testcase classname="Login de usuario" name="Login exitoso con credenciales válidas - Example #1.1" time="4.82">
+<system-out><![CDATA[
+Given El usuario está en la página de login.................................passed
+When El usuario ingresa el "standard_user" y "secret_sauce".................passed
+And El usuario hace click en el botón de login..............................passed
+Then El usuario debe ver la página de productos.............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login de usuario" name="Login exitoso con credenciales válidas - Example #1.2" time="2.68">
+<system-out><![CDATA[
+Given El usuario está en la página de login.................................passed
+When El usuario ingresa el "problem_user" y "secret_sauce"..................passed
+And El usuario hace click en el botón de login..............................passed
+Then El usuario debe ver la página de productos.............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login de usuario" name="Login exitoso con credenciales válidas - Example #1.3" time="7.066">
+<system-out><![CDATA[
+Given El usuario está en la página de login.................................passed
+When El usuario ingresa el "performance_glitch_user" y "secret_sauce".......passed
+And El usuario hace click en el botón de login..............................passed
+Then El usuario debe ver la página de productos.............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login de usuario" name="Login exitoso con credenciales válidas - Example #1.4" time="1.863">
+<system-out><![CDATA[
+Given El usuario está en la página de login.................................passed
+When El usuario ingresa el "error_user" y "secret_sauce"....................passed
+And El usuario hace click en el botón de login..............................passed
+Then El usuario debe ver la página de productos.............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login de usuario" name="Login exitoso con credenciales válidas - Example #1.5" time="1.717">
+<system-out><![CDATA[
+Given El usuario está en la página de login.................................passed
+When El usuario ingresa el "visual_user" y "secret_sauce"...................passed
+And El usuario hace click en el botón de login..............................passed
+Then El usuario debe ver la página de productos.............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login de usuario" name="Login con credenciales inválidas - Example #1.1" time="1.525">
+<system-out><![CDATA[
+Given El usuario está en la página de login.................................passed
+When El usuario ingresa el "" y "secret_sauce"..............................passed
+And El usuario hace click en el botón de login..............................passed
+Then El usuario debe ver "Epic sadface: Username is required" de error......passed
+]]></system-out>
+</testcase>
+<testcase classname="Login de usuario" name="Login con credenciales inválidas - Example #1.2" time="1.601">
+<system-out><![CDATA[
+Given El usuario está en la página de login.................................passed
+When El usuario ingresa el "locked_out_user" y ""...........................passed
+And El usuario hace click en el botón de login..............................passed
+Then El usuario debe ver "Epic sadface: Password is required" de error......passed
+]]></system-out>
+</testcase>
+<testcase classname="Login de usuario" name="Login con credenciales inválidas - Example #1.3" time="1.747">
+<system-out><![CDATA[
+Given El usuario está en la página de login.................................passed
+When El usuario ingresa el "wrong_user" y "secret_sauce"....................passed
+And El usuario hace click en el botón de login..............................passed
+Then El usuario debe ver "Epic sadface: Username and password do not match any user in this service" de error.passed
+]]></system-out>
+</testcase>
+<testcase classname="Login de usuario" name="Login con credenciales inválidas - Example #1.4" time="1.907">
+<system-out><![CDATA[
+Given El usuario está en la página de login.................................passed
+When El usuario ingresa el "performance_glitch_user" y "wrong_sauce"........passed
+And El usuario hace click en el botón de login..............................passed
+Then El usuario debe ver "Epic sadface: Username and password do not match any user in this service" de error.passed
+]]></system-out>
+</testcase>
+<testcase classname="Pagina productos" name="Diferentes acciones con productos - Example #1.1" time="1.764">
+<system-out><![CDATA[
+Given El usuario ha iniciado sesión correctamente...........................passed
+When El usuario debe ver la página de productos.............................passed
+Then El usuario puede "Agregar" un producto.................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Pagina productos" name="Diferentes acciones con productos - Example #1.2" time="1.682">
+<system-out><![CDATA[
+Given El usuario ha iniciado sesión correctamente...........................passed
+When El usuario debe ver la página de productos.............................passed
+Then El usuario puede "Eliminar" un producto................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Pagina productos" name="Diferentes acciones con productos - Example #1.3" time="1.639">
+<system-out><![CDATA[
+Given El usuario ha iniciado sesión correctamente...........................passed
+When El usuario debe ver la página de productos.............................passed
+Then El usuario puede "Checkout" un producto................................passed
+]]></system-out>
+</testcase>
+</testsuite>
