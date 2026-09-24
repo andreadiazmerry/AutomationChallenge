@@ -1,0 +1,11 @@
+{
+  "browser": {
+    "browserName": "chromium",
+    "isolated": true,
+    "launchOptions": { "headless": false }
+  },
+  "outputDir": "./mcp-output",
+  "network": {
+    "allowedOrigins": ["https://www.saucedemo.com"]
+  }
+}
